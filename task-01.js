@@ -2,11 +2,9 @@
 // Напиши функцию-конструктор Account, которая создает объект со свойствами login и email.
 // В prototype функции-конструктора добавь метод getInfo(),
 // который выводит в консоль значения полей login и email объекта который его вызвал.
-class Account {
-  constructor({login, email}) {
+function Account({login, email}) {
     this.login = login
     this.email = email
-  }
 }
 Account.prototype.getInfo = function(){
   console.log(`Login ${this.login}, Email: ${this.email}`)
